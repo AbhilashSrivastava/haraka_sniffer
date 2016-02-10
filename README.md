@@ -6,7 +6,7 @@ Steps To Setup the sniffer:
 1. Clone this repo
 2. Run  " npm install"
 3. Install "node-inspector"
-4. Install Swaks for mail serving.
+4. Install Swaks for mail sending.
 5. Setup a local mailserver (On Probably 1025 port, as is configured , however u can change it in smtp_forward.ini file)
         For mailserver locally , u can user "mailcatcher" , ruby based local mailserver
 6. Now run "node --debug haraka.js"
