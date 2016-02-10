@@ -45,6 +45,7 @@ exports.createTransaction = function(uuid) {
     var t = new Transaction();
     t.uuid = uuid || utils.uuid();
     // Initialize MessageStream here to pass in the UUID
+    debugger;
     t.message_stream = new MessageStream(
             config.get('smtp.ini'), t.uuid, t.header.header_list);
     return t;
@@ -55,7 +56,7 @@ Transaction.prototype.ensure_body = function() {
     if (this.body) {
         return;
     }
-
+    debugger;
     this.body = new body.Body(this.header);
     this.attachment_start_hooks.forEach(function (h) {
         self.body.on('attachment_start', h);

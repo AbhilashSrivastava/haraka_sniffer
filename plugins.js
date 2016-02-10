@@ -102,7 +102,7 @@ Plugin.prototype.register_hook = function (hook_name, method_name, priority) {
     });
     this.hooks[hook_name] = this.hooks[hook_name] || [];
     this.hooks[hook_name].push(method_name);
-
+    debugger;
     logger.logdebug("registered hook " + hook_name +
                     " to " + this.name + '.' + method_name +
                     " priority " + priority);
